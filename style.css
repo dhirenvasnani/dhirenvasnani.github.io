@@ -33,6 +33,7 @@ header .logo {
 }
 
 #home {
+  background-color: white;
   height: 250px;
   display: flex;
   align-items: center;
@@ -52,6 +53,7 @@ header .logo {
 }
 
 #artworks {
+  background-color: white;
   padding: 40px 0;
 }
 
