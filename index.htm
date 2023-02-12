@@ -1,55 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <title> Dhiren Vasnani</title>
-    <script src="myscript.js"></script>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-  </head>
-  <body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>My Portfolio Website</title>
+  <script src="myscript.js"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
   <a class="navbar-brand" href="#">
     <img src="logo.png" alt="Logo" style="width:40px;">
   </a>
-  <div class="navbar-brand mx-auto">Dhiren Vasnani</div>
+  <div class="navbar-brand mx-auto d-none d-sm-block">Dhiren Vasnani</div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-       <center> <a class="nav-link" href="#home">Home</a></center>
+       <a class="nav-link" href="#home">Home</a>
       </li>
       <li class="nav-item">
-        <center><a class="nav-link" href="#artworks">Artworks</a></center>
+        <a class="nav-link" href="#artworks">Artworks</a>
       </li>
     </ul>
   </div>
 </nav>
 
 
+
+<br> <br> <br>
 <!-- Home Section -->
     <div class="container my-5" id="home">
-     <br>
-     <br>
-     <br>
-      <h1><strong>Hey, I am Dhiren & I make 3d sculpts</strong></h1>
-      
-
+      <h1>Hey, I am Dhiren & I make 3d sculpts.<br>You can find some of my latest sculpts here</h1>
     </div>
-     <br>
-     <br>
- <hr>
-    <!-- Artworks Section -->
+
+ <!-- Artworks Section -->
     <div class="container my-5" id="artworks">
       <h1 class=>Artworks</h1>
       <br>
@@ -113,31 +105,23 @@
        <div class="col-sm-4">
      <img src="https://drive.google.com/uc?id=1-Zyar-nsCUcb1NG6cPoSjUTPsfCSwRbc" alt="happy_birthday" class="img-fluid">
   </div>
-
-    
-
-
-  </div>
+</div>
  </div>
       </div>
     </div>
 
-<!-- Footer -->
-<footer class="bg-light py-3">
-  <div class="container">
-  
-	<br>
-		
-    <h5 class="text-center">  
-      <a href="https://www.instagram.com/dhiren_vasnani/" target="_blank">Instagram</a> | 
-      <a href="https://discord.gg/yQ72GM8HFU" target="_blank">Discord</a> | 
-      <a href="https://twitter.com/dhiren_vasnani" target="_blank">Twitter</a>
-    </h5>
-    
-    <br>
-    	
-  </div>
-</footer>  
 
-</body>
-</html>
+<footer class="bg-white p-3">
+  <div class="container">
+    <div class="row d-flex justify-content-between">
+      <div class="col-lg-4 col-md-6">
+        <p class="text-center"><strong>Dhiren Vasnani</strong></p>
+      </div>
+      <div class="col-lg-4 col-md-6 d-flex justify-content-between">
+        <a href="https://instagram.com/dhiren_vasnani" class="footer-links"><strong>Instagram</strong></a>
+        <a href="#" class="footer-links"><strong>Twitter</strong></a>
+        <a href="#" class="footer-links"><strong>Discord</strong></a>
+      </div>
+    </div>
+  </div>
+</footer>
