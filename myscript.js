@@ -16,5 +16,14 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  $('.logo').click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1000);
+  });
+});
+
 
 
