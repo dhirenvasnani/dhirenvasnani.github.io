@@ -1,22 +1,18 @@
-.navbar-brand {
-  color: black !important;
-  font-weight: bold;
-}
-
 body {
 	text-align: center;
 	}
 	
+	.logo-img {
+		width: 50px;
+		height: 40px;
+		padding-right: 10px;
+	}
 	
-.super-bold { font-weight: bold; font-size: 40px;}
-	
-.pp { font-size: 21px; }
-
-.ul {
-	align: center;
+	.home {
+		padding-top: 40px;
 }
 
-.img-fluid {
+	.img-fluid {
   border-radius: 10px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
@@ -37,78 +33,64 @@ body {
   object-fit: cover;
 }
 
+.super-bold { 
+  font-weight: bold;
+ font-size: 40px;
+}
+	
+.pp { 
+  font-size: 21px; 
+}
 
-/* For desktop and tablets */
-@media (min-width: 768px) {
-  /* Display the website name and social media links inline */
-  .header__name {
-    display: inline;
-  }
-  .header__social {
-    display: inline;
+  footer {
+    background-color: #fff;
+    padding: 50px 0;
   }
   
-  /* Remove the line break after the website name */
-  .header__name::after {
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
+  .logo {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 20px;
   }
-}
-
-/* For mobile devices */
-@media (max-width: 767px) {
-  /* Display the website name and social media links as blocks */
-  .header__name {
-    display: block;
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
   }
-  .header__social {
-    display: block;
+  
+  .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 25px;
+    color: #fff;
+    background-color: #7289da; /* Discord blue */
+    transition: background-color 0.3s ease-in-out;
   }
+  
+  .social-links a:hover {
+    background-color: #007bff;
+    transform: scale(1.2);
+  }
+  
+  .social-links a:last-child {
+    margin-right: 0;
+  }
+  
+  footer a[href^="https://twitter.com"] {
+  background-color: #1da1f2; /* light blue */
 }
 
-
-.logo {
-  font-size: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #333;
+footer a[href^="https://discord.gg"] {
+  background-color: #7289da; /* dark blue */
 }
 
-footer {
-  background-color: white;
-  padding: 50px 0;
+footer a[href^="https://instagram.com"] {
+  background-color: #e1306c; /* pink */
 }
-
-.social-links {
-  display: flex;
-  justify-content: center;
-}
-
-.social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-  font-size: 25px;
-  color: #fff;
-  background-color: black;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.social-links a:hover {
-  background-color: #007bff;
-  transform: scale(1.2);
-}
-
-
-.social-links a:last-child {
-  margin-right: 0;
-}
-
-
-
