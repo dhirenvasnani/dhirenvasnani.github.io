@@ -1,3 +1,27 @@
+/*Scrollbar*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track { 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5c5c5c; 
+}
+
+
 body {
 	text-align: center;
 	}
@@ -34,28 +58,7 @@ body {
 }
 
 
-/*Scrollbar*/
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track { 
-  border-radius: 5px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: grey; 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #5c5c5c; 
-}
 
 .super-bold { 
   font-weight: bold;
