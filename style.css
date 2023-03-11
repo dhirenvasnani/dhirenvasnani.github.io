@@ -3,7 +3,7 @@ body {
 	}
 
 .navbar {
-	position: fixed;
+	position: fixed-top;
 	background-color: #fff;
 	
 .logo-img {
