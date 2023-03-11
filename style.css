@@ -3,8 +3,8 @@ body {
 	}
 
 .navbar {
-	position: fixed-top;
 	background-color: #fff;
+        }
 	
 .logo-img {
 	width: 50px;
