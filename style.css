@@ -1,15 +1,19 @@
 body {
 	text-align: center;
 	}
+
+.navbar {
+	position: fixed;
+	background-color: #fff;
 	
-	.logo-img {
-		width: 50px;
-		height: 40px;
-		padding-right: 10px;
+.logo-img {
+	width: 50px;
+	height: 40px;
+	padding-right: 10px;
 	}
 	
-	.home {
-		padding-top: 40px;
+.home {
+	padding-top: 40px;
 }
 
 	.img-fluid {
