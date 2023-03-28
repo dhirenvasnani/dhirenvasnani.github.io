@@ -12,18 +12,18 @@ $(document).ready(function() {
     var section = $(this).attr("href");
     $("html, body").animate({
       scrollTop: $(section).offset().top
-    }, 500);
+    }, 500, function() {
+      console.log("Scroll animation completed.");
+    });
   });
-});
 
-$(document).ready(function() {
   $('.logo').click(function(e) {
     e.preventDefault();
+    console.log("Logo clicked.");
     $('html, body').animate({
       scrollTop: 0
-    }, 1000);
+    }, 1000, function() {
+      console.log("Scroll to top animation completed.");
+    });
   });
 });
-
-
-
