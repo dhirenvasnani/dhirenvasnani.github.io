@@ -112,11 +112,11 @@ footer {
   margin-right: 10px;
   font-size: 25px;
   color: #fff;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in;
 }
 
 .social-links a:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 .social-links a:last-child {
