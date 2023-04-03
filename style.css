@@ -115,7 +115,7 @@ footer {
   margin-right: 10px;
   font-size: 25px;
   color: #fff;
-  transition: background-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .social-links a:hover {
