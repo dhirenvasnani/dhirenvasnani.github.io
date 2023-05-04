@@ -26,7 +26,7 @@
 /* Webpage */
 
 body {
-	padding-top: 100px;
+    padding-top: 100px;
     margin: 0;
 }
 
@@ -65,6 +65,7 @@ body {
       padding: 20px;
     }
 
+/*Cards*/
     .card {
       width: 300px;
       height: 350px;
@@ -125,6 +126,7 @@ body {
     margin-bottom: 5px;
 }
 
+/*Others*/
 .super-bold {
     font-weight: bold;
     font-size: 40px;
