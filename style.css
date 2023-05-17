@@ -170,7 +170,7 @@ footer {
     justify-content: center;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 10px;
     margin-right: 10px;
     font-size: 25px;
     color: #fff;
@@ -179,7 +179,7 @@ footer {
 
 .social-links a:hover {
     transform: scale(1.15) translateY(-5px);
-    transition: background-color 0.01s ease-out;
+    transition: background-color 0.03s ease-in-out;
 }
 
 .social-links a:last-child {
