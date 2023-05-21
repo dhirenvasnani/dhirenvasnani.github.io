@@ -165,6 +165,7 @@ footer {
 }
 
 .social-links a {
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,12 +175,12 @@ footer {
     margin-right: 10px;
     font-size: 25px;
     color: #fff;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 500ms ease-in-out;
 }
 
 .social-links a:hover {
     transform: scale(1.15) translateY(-5px);
-    transition: background-color 0.03s ease-in-out;
+    transition: background-color 500ms ease-in-out;
 }
 
 .social-links a:last-child {
