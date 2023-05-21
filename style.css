@@ -179,7 +179,7 @@ footer {
 }
 
 .social-links a:hover {
-    background-color: black;
+    background-color: #000000;
     transform: scale(1.15) translateY(-5px);
     transition: background-color 500ms ease-in-out;
 }
