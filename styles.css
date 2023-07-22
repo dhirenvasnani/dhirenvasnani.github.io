@@ -240,21 +240,6 @@ body {
     font-size: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-    .footer .social-icons a:hover {
-        background-color: #458fff;
-    }
-
-    #backToTop {
-        background-color: #00183d;
-    }
-
-    #backToTop:hover {
-        background-color: #458fff;
-    }
-}
-
-
 /* Scroll bar */
 
 /* width */
