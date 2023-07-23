@@ -1,7 +1,7 @@
 /* Webpage */
 
 body {
-    padding-top: 100px;
+    padding-top: 68px;
     margin: 0;
     background-color: #deebff;
     color: #001e4d;
@@ -26,7 +26,8 @@ body {
 }
 
 .nav-link {
-    font-size: 1.2rem;
+    font-size: 20px;
+    font-weight: 500;
     color: #2e80ff;
     transition: all 0.3s ease-in-out;
 }
@@ -38,6 +39,28 @@ body {
 }
 
 .home {
+	background-image: url("background.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 100px 0;
+	color: #fff;
+}
+
+.home .heading {
+	font-weight: bold;
+	font-size: 60px;
+	color: #ffffff;
+}
+
+.home .text {
+	font-size: 25px;
+	color: #ffffff;
+}
+
+.artworks {
+    font-size: 35px;
     text-align: center;
 }
 
@@ -219,7 +242,7 @@ body {
     width: 37px;
     height: 37px;
     bottom: 70px;
-    right: 20px;
+    right: 25px;
     background-color: #458fff;
     color: #fff;
     padding: 10px;
@@ -240,8 +263,8 @@ body {
     font-size: 20px;
 }
 
-/* Scroll bar */
 
+/* Scroll bar */
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
@@ -262,3 +285,4 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #69a4ff;
 }
+v
