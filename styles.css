@@ -211,6 +211,9 @@ body {
     background-color: #7289da;
 }
 
+.footer .social-icons .threads {
+    background-color: #000000;
+}
 .footer .social-icons i {
     color: #fff;
     font-size: 24px;
