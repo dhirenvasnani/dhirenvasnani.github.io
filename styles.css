@@ -1,16 +1,16 @@
-/* Webpage */
-
+/* General Styles */
 body {
-    padding-top: 68px;
+    padding-top: 65px;
     margin: 0;
     background-color: #deebff;
     color: #001e4d;
+    transition: all 0.3s ease-out;
 }
 
+/* Navbar Styles */
 .navbar {
     background-color: #cce0ff;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 12px 20px 12px 20px; /*top, right, bottom, left*/
 }
 
 .navbar-brand {
@@ -20,9 +20,8 @@ body {
 }
 
 .logo-img {
-    width: 50px;
+    width: 40px;
     height: 40px;
-    padding-right: 10px;
 }
 
 .nav-link {
@@ -38,27 +37,29 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
+/* Home Section Styles */
 .home {
-	background-image: url("background.png");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	text-align: center;
-	padding: 100px 0;
-	color: #fff;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
 }
 
 .home .heading {
-	font-weight: bold;
-	font-size: 60px;
-	color: #ffffff;
+    font-weight: bold;
+    font-size: 60px;
+    color: #ffffff;
 }
 
 .home .text {
-	font-size: 25px;
-	color: #ffffff;
+    font-size: 25px;
+    color: #ffffff;
 }
 
+/* Artworks Section Styles */
 .artworks {
     font-size: 35px;
     text-align: center;
@@ -80,7 +81,7 @@ body {
     object-fit: cover;
 }
 
-/*Cards*/
+/* Card Styles */
 .card {
     width: 300px;
     height: 350px;
@@ -144,7 +145,7 @@ body {
     margin-bottom: 5px;
 }
 
-/*Others*/
+/* Others Styles */
 .super-bold {
     font-weight: bold;
     font-size: 40px;
@@ -155,14 +156,13 @@ body {
     font-size: 21px;
 }
 
-/* Footer */
+/* Footer Styles */
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #cce0ff;
     padding: 20px;
-    /*margin: 0px 25px;*/
 }
 
 .footer .website-name {
@@ -216,7 +216,30 @@ body {
     font-size: 24px;
 }
 
+/* Media Queries */
 @media (max-width: 720px) {
+    body {
+        padding-top: 60px;
+        transition: all 0.3s ease-out;
+    }
+    
+    .navbar {
+        background-color: #cce0ff;
+        padding: 8px 16px 8px 16px; /*top, right, bottom, left*/
+    }
+    
+    .home {
+        padding: 35px 0;
+    }
+    
+    .home .heading {
+        font-size: 50px;
+    }
+    
+    .home .text {
+        font-size: 20px;
+    }
+    
     .footer {
         flex-direction: column;
         text-align: center;
@@ -235,6 +258,7 @@ body {
     }
 }
 
+/* Back To Top Styles */
 #backToTop {
     display: none;
     position: fixed;
@@ -263,8 +287,7 @@ body {
     font-size: 20px;
 }
 
-
-/* Scroll bar */
+/* Scroll bar Styles */
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
@@ -285,4 +308,3 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #69a4ff;
 }
-v
