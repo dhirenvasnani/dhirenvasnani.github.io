@@ -33,20 +33,23 @@ body {
 
 .nav-link:hover {
     color: #0064ff;
-    text-decoration: underline;
     transition: all 0.3s ease-in-out;
+}
+
+.fa {
+	font-size: 15px;
 }
 
 /* Home Section Styles */
 .home {
-    background-image: url("background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    padding: 100px 0;
-    color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 100px 0;
+  color: #fff;
 }
+
 
 .home .heading {
     font-weight: bold;
@@ -236,7 +239,7 @@ body {
     }
     
     .home .heading {
-        font-size: 50px;
+        font-size: 45px;
     }
     
     .home .text {
