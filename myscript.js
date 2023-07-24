@@ -40,3 +40,31 @@ function scrollToTop() {
         }, 15);
     }
 }
+
+
+//Get Random Background Image From Array
+
+// List of background images
+const backgroundImages = [
+  "backgrounds/earth.png",
+  "backgrounds/jupiter.png",
+  "backgrounds/moon.png",
+  "backgrounds/saturn.png",
+  "backgrounds/solarsystem.png",
+];
+
+// Function to get a random image URL from the array, excluding background3.png for max-width: 720px
+function getRandomImage() {
+  let filteredImages = backgroundImages;
+  if (window.innerWidth <= 720) {
+    filteredImages = backgroundImages.filter(image => image !== "backgrounds/solarsystem.png");
+  }
+  const randomIndex = Math.floor(Math.random() * filteredImages.length);
+  return `url("${filteredImages[randomIndex]}")`;
+}
+
+// Apply the random background image after the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+  const homeElement = document.querySelector(".home");
+  homeElement.style.backgroundImage = getRandomImage();
+});
