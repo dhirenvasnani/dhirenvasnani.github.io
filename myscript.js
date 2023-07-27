@@ -68,3 +68,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const homeElement = document.querySelector(".home");
   homeElement.style.backgroundImage = getRandomImage();
 });
+
+// Add the 'fade-in' class to the body once the page loads
+window.onload = function() {
+	document.body.classList.add('fade-in');
+};
