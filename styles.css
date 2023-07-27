@@ -300,6 +300,7 @@ body.fade-in {
 }
 
 /* Scroll bar Styles */
+
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
