@@ -16,7 +16,7 @@ body.fade-in {
 /* Navbar Styles */
 .navbar {
     background-color: #cce0ff;
-    padding: 12px 20px 12px 20px; /*top, right, bottom, left*/
+    padding: 8px 20px 8px 20px; /*top, right, bottom, left*/
 }
 
 .navbar-brand {
@@ -40,10 +40,6 @@ body.fade-in {
 .nav-link:hover {
     color: #0064ff;
     transition: all 0.3s ease-in-out;
-}
-
-.fa {
-	font-size: 15px;
 }
 
 /* Home Section Styles */
@@ -237,7 +233,7 @@ body.fade-in {
     
     .navbar {
         background-color: #cce0ff;
-        padding: 8px 16px 8px 16px; /*top, right, bottom, left*/
+        padding: 6px 16px 6px 16px; /*top, right, bottom, left*/
     }
     
     .home {
