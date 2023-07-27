@@ -4,7 +4,13 @@ body {
     margin: 0;
     background-color: #deebff;
     color: #001e4d;
-    transition: all 0.3s ease-out;
+    transition: all 1s ease-out;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body.fade-in {
+    opacity: 1;
 }
 
 /* Navbar Styles */
