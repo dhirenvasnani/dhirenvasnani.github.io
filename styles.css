@@ -5,13 +5,26 @@ body {
     background-color: #deebff;
     color: #001e4d;
     transition: all 1s ease-out;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
 }
 
-body.fade-in {
+/* Define the animation keyframes */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
     opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+/* Apply the animation to all elements on the page */
+* {
+  animation: fadeInDown 1s ease;
+}
+
+
 
 /* Navbar Styles */
 .navbar {
@@ -40,6 +53,10 @@ body.fade-in {
 .nav-link:hover {
     color: #0064ff;
     transition: all 0.3s ease-in-out;
+}
+
+.fa {
+	font-size: 15px;
 }
 
 /* Home Section Styles */
@@ -296,7 +313,6 @@ body.fade-in {
 }
 
 /* Scroll bar Styles */
-
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
