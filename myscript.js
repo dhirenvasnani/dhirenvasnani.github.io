@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
   homeElement.style.backgroundImage = getRandomImage();
 });
 
-// JavaScript code to reveal and hide hidden cards with "View More" button
+// Code to reveal and hide hidden cards with "View More" button
 document.addEventListener("DOMContentLoaded", function() {
     const gridContainer = document.querySelector(".grid-container");
     const cards = gridContainer.querySelectorAll(".card");
@@ -98,12 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function mail() {
-            // Replace 'recipient@example.com' with the email address you want to send the email to
             const recipientEmail = 'dhirenvasnani@gmail.com';
-
-            // Construct the mailto link
             const mailtoLink = `mailto:${recipientEmail}`;
-
-            // Open the default email client with the new email composed
             window.location.href = mailtoLink;
             }
