@@ -68,3 +68,42 @@ document.addEventListener("DOMContentLoaded", function() {
   const homeElement = document.querySelector(".home");
   homeElement.style.backgroundImage = getRandomImage();
 });
+
+// JavaScript code to reveal and hide hidden cards with "View More" button
+document.addEventListener("DOMContentLoaded", function() {
+    const gridContainer = document.querySelector(".grid-container");
+    const cards = gridContainer.querySelectorAll(".card");
+    const viewMoreBtn = document.getElementById("viewMoreBtn");
+    const numberOfHiddenCards = cards.length - 5; // Calculate the number of initially hidden cards
+    
+    // Initially hide all the cards except the first five
+    for (let i = 5; i < cards.length; i++) {
+        cards[i].classList.add("hidden-card");
+    }
+    
+    // Add event listener to the "View More" button
+    viewMoreBtn.addEventListener("click", function() {
+        // Toggle the visibility of hidden cards by adding/removing "hidden-card" class
+        for (let i = 5; i < cards.length; i++) {
+            cards[i].classList.toggle("hidden-card");
+        }
+        
+        // Change the button text based on visibility of hidden cards
+        if (viewMoreBtn.innerHTML === 'View More <i class="fa-solid fa-angle-down"></i>') {
+            viewMoreBtn.innerHTML = 'View Less <i class="fa-solid fa-angle-up"></i>';
+        } else {
+            viewMoreBtn.innerHTML = 'View More <i class="fa-solid fa-angle-down"></i>';
+        }
+    });
+});
+
+function mail() {
+            // Replace 'recipient@example.com' with the email address you want to send the email to
+            const recipientEmail = 'dhirenvasnani@gmail.com';
+
+            // Construct the mailto link
+            const mailtoLink = `mailto:${recipientEmail}`;
+
+            // Open the default email client with the new email composed
+            window.location.href = mailtoLink;
+            }
