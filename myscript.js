@@ -101,4 +101,23 @@ function mail() {
             const recipientEmail = 'dhirenvasnani@gmail.com';
             const mailtoLink = `mailto:${recipientEmail}`;
             window.location.href = mailtoLink;
-            }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const typedTextElement = document.getElementById('typed-text');
+  const textToType = "From Imagination to Reality: Explore the World of My 3D Creations."; // Add your desired text here
+  const typingSpeed = 100; // Adjust this value to control the typing speed (lower value = faster)
+
+  let currentIndex = 0;
+
+  function typeText() {
+    if (currentIndex < textToType.length) {
+      typedTextElement.textContent += textToType.charAt(currentIndex);
+      currentIndex++;
+      setTimeout(typeText, typingSpeed);
+    }
+  }
+
+  typeText();
+});
+
