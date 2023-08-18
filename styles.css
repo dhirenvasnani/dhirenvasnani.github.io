@@ -270,15 +270,11 @@ body {
 }
 
 .footer .social-icons .twitter {
-	background-color: #1da1f2;
+	background-color: #000000;
 }
 
 .footer .social-icons .discord {
 	background-color: #7289da;
-}
-
-.footer .social-icons .threads {
-	background-color: #000000;
 }
 
 .footer .social-icons i {
