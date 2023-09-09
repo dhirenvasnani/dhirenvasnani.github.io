@@ -1,11 +1,21 @@
+/* Color Palette */
+:root {
+    --text-color: #001e4d;
+    --background-color: #deebff;
+    --primary-color: #2e80ff;
+    --secondary-color: #00183d;
+    --accent-color: #ff0000;
+    --element-color: #cce0ff;
+}
+
 /* General Styles */
 body {
     font-family: 'Ranade', sans-serif;
     font-weight: 500;
     padding-top: 55px;
     margin: 0;
-    background-color: #deebff;
-    color: #001e4d;
+    background-color: var(--background-color);
+    color: var(--text-color);
     transition: all 1s ease-out;
 }
 
@@ -29,13 +39,13 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    background-color: #cce0ff;
+    background-color: var(--element-color);
     padding: 10px 20px 10px 20px;
     /*top, right, bottom, left*/
 }
 
 .navbar-brand {
-    color: #00183d !important;
+    color: var(--secondary-color) !important;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -48,11 +58,11 @@ body {
 .nav-link {
     font-size: 17px;
     font-weight: 500;
-    color: #2e80ff;
+    color: var(--primary-color);
 }
 
 .nav-link:hover {
-    color: #000000;
+    color: var(--secondary-color);
 }
 
 .arrow {
@@ -70,7 +80,6 @@ body {
     padding: 100px 0;
     color: #fff;
 }
-
 
 .home .heading {
     font-family: 'Excon', sans-serif;
@@ -116,7 +125,7 @@ body {
     width: 300px;
     height: 350px;
     margin: 10px;
-    background-color: #cce0ff;
+    background-color: var(--element-color);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     position: relative;
@@ -131,6 +140,33 @@ body {
     transform: scale(1.04);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: var(--element-color);
+    z-index: 1;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.caption p {
+    margin-top: 5px;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
 
 .carousel-control {
     display: none;
@@ -158,32 +194,6 @@ body {
     object-fit: cover;
 }
 
-.caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 10px;
-    font-size: 1.2rem;
-    text-align: center;
-    background-color: #cddef7;
-    z-index: 1;
-    box-sizing: border-box;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding-top: 10px;
-}
-
-.caption p {
-    margin-top: 5px;
-    padding: 0;
-    margin-bottom: 5px;
-}
-
 .card.hidden-card {
     display: none;
 }
@@ -193,7 +203,7 @@ body {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #2e80ff;
+    background-color: var(--primary-color);
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -205,7 +215,7 @@ body {
 }
 
 .button:hover {
-    background-color: #00183d;
+    background-color: var(--secondary-color);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.23);
 }
 
@@ -221,7 +231,7 @@ body {
     font-family: 'Excon', sans-serif;
     font-weight: 600;
     font-size: 40px;
-    color: #020030;
+    color: var(--text-color);
     text-align: center;
 }
 
@@ -230,7 +240,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #cce0ff;
+    background-color: var(--element-color);
     padding: 20px;
 }
 
@@ -238,7 +248,7 @@ body {
     font-family: 'Excon', sans-serif;
     font-size: 27px;
     font-weight: bold;
-    color: #00183d;
+    color: var(--text-color);
 }
 
 .footer .social-icons {
@@ -261,7 +271,7 @@ body {
 
 .footer .social-icons a:hover {
     transform: translateY(-5px);
-    background-color: #00183d;
+    background-color: var(--secondary-color);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.23);
 }
 
@@ -295,7 +305,7 @@ body {
     height: 37px;
     bottom: 70px;
     right: 25px;
-    background-color: #458fff;
+    background-color: var(--primary-color);
     color: #fff;
     padding: 10px;
     border-radius: 10px;
@@ -306,7 +316,7 @@ body {
 }
 
 #backToTop:hover {
-    background-color: #00183d;
+    background-color: var(--secondary-color);
     transition: ease 0.3s;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.23);
 }
@@ -348,7 +358,6 @@ body {
     }
 
     .navbar {
-        background-color: #cce0ff;
         padding: 8px 16px 8px 16px;
         /*top, right, bottom, left*/
     }
