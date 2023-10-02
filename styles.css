@@ -32,7 +32,7 @@ body {
 }
 
 /* Apply the animation to all elements on the page */
-* {
+*:not(.carousel-item) {
     animation: fadeInDown 0.5s ease;
 }
 
