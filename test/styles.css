@@ -42,7 +42,7 @@ body {
     background: var(--primary) !important;
     opacity: 0.96;
     position: fixed;
-    bottom: 12px;
+    bottom: 18px;
     left: 50%;
     transform: translateX(-50%);
     width: 75%;
