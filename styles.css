@@ -34,7 +34,6 @@ body {
     background: var(--background);
     color: var(--text);
     align-items: center;
-    justify-content: center;
     margin: 10px;
 }
 
