@@ -33,7 +33,7 @@
 body {
     background: var(--background);
     color: var(--text);
-    align-items: center;
+    text-align: center;
     margin: 10px;
 }
 
@@ -163,11 +163,7 @@ p {
 }
 
 .social-card {
-    width: 18rem;
-    border-radius: 14px;
-    overflow: hidden;
-    transition: transform 0.2s ease-in-out;
-    display: flex;
+    width: 15rem;
     align-items: center;
     text-align: left;
     text-decoration: none;
@@ -181,7 +177,6 @@ p {
 
 .art {
     width: 20rem;
-    text-align: center;
 }
 
 .art img {
@@ -198,23 +193,58 @@ p {
     margin: 0;
 }
 
+.code-card {
+    width: 20rem;
+}
+
     
 footer {
     margin: 8px;
-    text-align: center;
     padding-bottom: 50px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
     .custom-nav {
         width: 35%;
-        bottom: 20px;
+        bottom: 25px;
     }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 2000px) {
+    body {
+        text-align: left;
+        padding-right: 250px;
+        margin-left: 40px;
+    }
+    
     .custom-nav {
-        width: 25%;
+        display: none;
+    }
+    
+    .main,
+    .section,
+    .custom-card,
+    .card-deck {
+        text-align: left !important;
+        justify-content: flex-start !important;
+        margin-left: 0;
+    }
+    
+    .card-deck {
+        padding-right: 0;
+        margin-right: 0;
+    }
+    
+    .custom-card {
+        flex-basis: 30%;
+    }
+    
+    .social-card {
+        width: 10rem;
+    }
+    
+    .code-card {
+        width: 15rem;
     }
 }
 

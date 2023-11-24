@@ -8,7 +8,7 @@ function setZoom() {
 
     if (screenWidth > 1500) {
         zoomLevel = screenWidth / 1000;
-        zoomLevel = zoomLevel - 0.5; 
+        zoomLevel = zoomLevel - 0.7; 
         document.body.style.zoom = zoomLevel;
         console.log("Screen Zoom Set to: " + zoomLevel);
 }
