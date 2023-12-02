@@ -23,17 +23,21 @@
     </head>
     
     <body>
+		<!-- NavPill -->
         <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm fixed-bottom custom-nav">
             <li class="nav-item" role="presentation">
-                <a class="nav-link rounded-5" href="/index.html" role="tab" aria-selected="true">Home</a>
+                <a class="nav-link active rounded-5" href="/index.html#home" role="tab" aria-selected="true" data-text="Home"><i class="fa-solid fa-home icon"></i></a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link active rounded-5" href="#works" role="tab" aria-selected="false">Sculpts</a>
+                <a class="nav-link rounded-5" href="/index.html#works" role="tab" aria-selected="false" data-text="My Works"><i class="fa-solid fa-briefcase icon"></i></a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link rounded-5" href="/index.html#contact" role="tab" aria-selected="false">Contact</a>
+                <a class="nav-link rounded-5" href="/index.html#contact" role="tab" aria-selected="false" data-text="Contact"><i class="fa-solid fa-envelope icon"></i></a>
             </li>
         </ul>
+        
+        <!-- Back Button -->
+        <button class="back-btn" onclick="goBack();"><i class="fa-solid fa-arrow-left"></i></button>
 
         <div id="works" class="section">
             <div class="main">

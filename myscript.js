@@ -7,3 +7,7 @@ document.addEventListener("contextmenu", function(event) {
 document.addEventListener("dragstart", function(event) {
     event.preventDefault();
 });
+
+function goBack() {
+	window.location.href = '/index.html#home';
+}

@@ -37,7 +37,7 @@ body {
     margin: 10px;
 }
 
-*:not(.custom-nav) {
+*:not(.custom-nav, .custom-nav .icon) {
     animation: page-load-items 0.7s cubic-bezier(0.21, 0, 0.17, 1);
 }
 
@@ -56,9 +56,9 @@ body {
     --bs-nav-pills-link-active: var(--text);
     --bs-nav-pills-link-active-bg: var(--secondary);
     background: var(--primary) !important;
-    opacity: 0.96;
+    opacity: 0.98;
     position: fixed;
-    width: 75%;
+    width: 65%;
     bottom: 18px;
     left: 0;
     right: 0;
@@ -67,6 +67,7 @@ body {
     justify-content: space-around;
     padding: 10px;
     box-sizing: border-box;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.17);
     z-index: 10;
 }
 
@@ -83,6 +84,33 @@ body {
     outline: none !important;
     box-shadow: none !important;
     border-color: transparent !important;
+}
+
+.custom-nav .icon {
+    font-size: 20px;
+}
+
+.back-btn {
+    display: none;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.17);
+    z-index: 999px;
+    transition: all 0.2s ease-in-out;
+}   
+
+.back-btn:hover {
+    background-color: var(--accent);
+    border-radius: 30%;
 }
 
 h1, h2, h3, h4, h6 {
@@ -119,21 +147,22 @@ p {
 .custom-card {
     background-color: var(--secondary);
     color: var(--text);
+    overflow: hidden;
     border: 1px solid var(--accent);
-    border-radius: 14px;
+    border-radius: 18px;
     width: 18rem;
     margin: 20px;
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .custom-card img {
     height: 200px;
     object-fit: cover;
-    border-radius: 14px 14px 0 0;
 }
 
 .custom-card:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
+    border-radius: 8px;
 }
 
 .card-body {
@@ -203,6 +232,17 @@ footer {
     padding-bottom: 50px;
 }
 
+@media only screen and (min-width: 768px) {
+  .custom-nav .icon {
+    display: none;
+  }
+
+  .custom-nav .nav-link::before {
+    content: attr(data-text);
+    margin-right: 5px;
+  }
+}
+
 @media (min-width: 1000px) {
     body {
         padding: 0 50px;
@@ -242,11 +282,11 @@ footer {
     p { font-size: 24px; }
     
     .custom-nav {
-        width: 16%
+        display: none;
     }
-   
-    .custom-card {
-        
+    
+    .back-btn {
+        display: block;
     }
 }
 
@@ -263,16 +303,16 @@ footer {
     
     p { font-size: 32px; }
     
-    .custom-nav {
-        width: 20%;
+    .custom-card {
+        width: 22rem;
     }
     
     .social-card {
-        width: 10rem;
+        width: 18rem;
     }
     
     .code-card {
-        width: 15rem;
+        width: 20rem;
     }
 }
 
